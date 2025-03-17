@@ -1,0 +1,271 @@
+:root {
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primary: #26292c;
+  --secundary: #687078;
+  --botton: #aa273b;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Krub", sans-serif;
+  background-color: var(--primary);
+}
+
+main{
+  background-color: var(--oscuro);
+  margin: 5rem;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: var(--blanco);
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.nav-bg {
+  background-color: var(--oscuro);
+  border-radius: 1rem;
+}
+
+.navegacion-principal {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .navegacion-principal {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.navegacion-principal a {
+  display: block;
+  text-align: center;
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+
+
+.navegacion-principal a:hover {
+  background-color: var(--blanco);
+  color: var(--oscuro);
+  border-radius: .5rem;
+}
+
+footer {
+  color: var(--blanco);
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem; /* Espacio entre filas */
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.lon{
+  height: 10rem;
+  width: 10rem;
+  margin-bottom: 3rem;
+  background-color: var(--secundary);
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.vol{
+  height: 10rem;
+  width: 10rem;
+  margin-bottom: 3rem;
+  background-color: var(--secundary);
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.vel{
+  height: 10rem;
+  width: 10rem;
+  margin-bottom: 3rem;
+  background-color: var(--secundary);
+  border-radius: 50%;
+  padding: 1rem;
+}
+.temp{
+  height: 10rem;
+  width: 10rem;
+  margin-bottom: 3rem;
+  background-color: var(--secundary);
+  border-radius: 50%;
+  padding: 1rem;
+  margin-left: 1.5rem;
+}
+
+/* Ajusta el ancho de las columnas en pantallas más grandes */
+@media (min-width: 768px) {
+  .grid {
+    margin-left: 5rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .row {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .column {
+    margin: 10rem; /* Espacio entre columnas */
+  }
+}
+
+
+.longitud{
+  background-color: var(--oscuro);
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-left: -3rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.volumen{
+  background-color: var(--oscuro);
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-left: -3.2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.velocidad{
+  background-color: var(--oscuro);
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-left: -4rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.temperatura{
+  background-color: var(--oscuro);
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-left: -5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.longitud:hover {
+  background-color: var(--blanco);
+  color: var(--oscuro);
+  border-radius: 1.5rem;
+}
+
+.volumen:hover {
+  background-color: var(--blanco);
+  color: var(--oscuro);
+  border-radius: 1.5rem;
+}
+
+.velocidad:hover {
+  background-color: var(--blanco);
+  color: var(--oscuro);
+  border-radius: 1.5rem;
+}
+
+.temperatura:hover {
+  background-color: var(--blanco);
+  color: var(--oscuro);
+  border-radius: 1.5rem;
+}
+
+/*----------------Interfaz de los convertidores---------------------*/
+.contenedor-medidas{
+  max-width: 55rem;
+  margin: auto;
+  background-color: var(--secundary);
+  border: .1rem var(--oscuro);
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 2rem;
+}
+
+.fila{
+  margin: 1.5rem 0;
+}
+select{
+  font-size: 2rem;
+  border: none;
+  padding: .5rem;
+  border-radius: 3rem;
+}
+.resultado{
+  width: 100%;
+  margin: 1rem 0;
+  background-color: var(--primary);
+  color: var(--blanco);
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  border-radius: 1rem;
+}
+
+input{
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+}
